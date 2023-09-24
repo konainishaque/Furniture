@@ -1,0 +1,711 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #FAF7EF;
+    max-width: 1440px;
+    margin: 0 auto; 
+    padding: 10px;
+}
+.div-1{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.logo-img{
+  width: 20px;
+  margin-bottom: 5px;
+}
+.logo{
+    display: flex;
+    color: #255849;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    word-wrap: break-word;
+    font-family: poppins;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 15px;
+    color: #255849;
+    font-size: 22px;
+    font-family: Cabinet Grotesk Variable;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word
+}
+.nav-left-side{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+}
+.heading{
+    width: 957px;
+    text-align: center;
+    color: #255849;
+    font-size: 70px;
+    font-family: cabinet;
+    font-weight: 700;
+    line-height: 108px;
+    word-wrap: break-word;
+  
+}
+.para{
+    width: 833px;
+          text-align: center;
+          color: #255849;
+          font-size: 20px;
+          font-family: Cabinet Grotesk Variable;
+          font-weight: 400;
+          line-height: 33.6px;
+          word-wrap: break-word;
+}
+.btn{
+        text-align: center;
+          color: white;
+          font-size: 18px;
+          font-family: Cabinet Grotesk Variable;
+          font-weight: 500;
+          line-height: 18px;
+          word-wrap: break-word;
+          z-index: 1;
+          background: #255849;
+          padding: 10px 20px;
+          border-radius: 50px;
+}
+.line-1{
+    width: 30px;
+    border: solid 1.5px;
+    height: 0;
+    color: #255849;
+}
+.line-2{
+    width: 24px;
+    border: solid 1.5px;
+    height: 0;
+    color: #255849;
+}
+.wrapper {
+    max-width: 1440px;
+    position: relative;
+    overflow: hidden; /* Add this */
+}
+
+.carousel-container {
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0;
+    margin-top: 20px;
+    overflow: hidden; /* Add this */
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.9s ease;
+}
+
+.carousel img {
+    height: 320px;
+    object-fit: contain;
+    width: calc(100% / 5); /* Display 5 images in a line */
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.arrow {
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.arrow:first-child {
+    left: 5px;
+    z-index: 1;
+}
+
+.arrow:last-child {
+    right: 5px;
+}
+   /* Ellipse on top */
+   .ellipse*-top {
+    width: 100%;
+    background:#FAF7EF;
+    position: absolute;
+    height: 121px;
+    border-radius: 95%;
+    bottom: 30px; /* Adjust the top position as needed */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Center horizontally */
+    box-sizing: border-box;
+}
+.ellipse-bot*tom{
+    width: 100%;
+    background:#FAF7EF;
+    position: absolute;
+    height: 121px;
+    border-radius: 95%;
+    top: 800px; /* Adjust the top position as needed */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Center horizontally */
+    box-sizing: border-box;
+}
+
+.frame{
+    background:#FAF7EF;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    border: #255849 solid 1px;
+    gap: 0;    
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 100px;
+
+}
+.item-1{
+    border: #255849 solid 1px;
+    padding: 10px;
+    height: 400px;
+}
+.item-1-h2{
+    font-family: poppins;
+    margin-bottom: 300px;
+    margin-left: 10px;
+    color: #255849;
+    font-weight: 400;
+}
+.item-1-p{
+    font-family: poppins;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.item{
+     width: 250px;
+     margin-top: 10px;
+     margin-left: 70px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     margin-bottom: -30px;
+}
+.title , .cost , .add-to-cart {
+    font-family: poppins;
+}
+.title{
+    font-weight: 500;
+    margin-bottom: 5px
+}
+.add-to-cart{
+    color: black;   
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.vase,.dining{
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.dining{
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+.toast {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-family: poppins;
+}
+.footer {
+    width: 100%;
+    background: #31470b;
+    padding: 20px 0; /* Add some padding to the top and bottom */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stack columns on mobile */
+    align-items: center; /* Center content horizontally */
+}
+
+.col-1 {
+    width: 100%; /* Take the full width */
+    max-width: 800px; /* Limit the maximum width */
+    margin-bottom: 20px; /* Add some space between columns */
+    text-align: center; /* Center content horizontally */
+}
+
+.newsletter {
+    font-family: poppins;
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.col-2 {
+    width: 100%; /* Take the full width */
+    max-width: 400px; /* Limit the maximum width */
+    text-align: center; /* Center content horizontally */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-family: poppins;
+    font-size: 14px;
+    color: white;
+}
+
+input[type="email"] {
+    flex: 1;
+    padding: 10px; /* Increase padding for better input field appearance */
+    background: transparent;
+    border: 1px solid white; /* Add border for input field */
+    border-radius: 5px; /* Add rounded corners */
+    color: white;
+}
+
+.arrow-image {
+    width: 20px;
+    height: auto;
+    margin-left: -35px;
+   
+}
+@media screen and (max-width: 1100px) {
+    .carousel img {
+        width: calc(100% / 4); /* Display 4 images at a time */
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo-img {
+        width: 15px;
+    }
+
+    nav ul li {
+        font-size: 18px;
+    }
+
+    .heading {
+        font-size: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .para {
+        font-size: 16px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .frame{
+        flex-wrap: wrap;
+    }
+    .nav-left-side {
+        display: none;
+    }
+
+    .ellipse-top {
+        display: none;
+    }
+
+    .ellipse-bottom {
+        display: none;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 350px 350px;
+        border: none;
+        margin-left: 100px;
+        margin-right: 30px;
+        margin-bottom: 100px;
+    }
+    .item{
+        margin-left: 50px;
+    }
+    .vase,.dining{
+        width: 280px;
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+    .arrow-image{display: none;}
+    .col-1 {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .newsletter {
+        font-size: 24px; /* Increase font size for smaller screens */
+    }
+
+    .col-2 {
+        max-width: 100%; /* Allow the second column to take full width on small screens */
+    }
+
+    .input-container {
+        margin-left: 0; /* Remove left margin for input container */
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .carousel img {
+        width: calc(100% / 3); /* Display 3 images at a time */
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .logo-img {
+        width: 12px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .para {
+        font-size: 14px;
+        width: auto; /* Reset width to auto for smaller screens */
+    }
+    .vase,.dining{
+        margin-right: 30px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 350px ;
+        border: none;
+        margin-left: 100px;
+        margin-right: 30px;
+        margin-bottom: 100px;
+    }.item-1{
+        border: #255849 solid 1px;
+        padding: 10px;
+        height: 400px;
+        width: 400px;
+    }
+    .item-1-h2{
+        font-size: 30px;
+    }.input-container {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        font-family: poppins;
+        font-size: 14px;
+        color: white;
+        width: 400px;
+        margin-left: 100px;
+    }
+    .arrow-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .carousel img {
+        width: calc(100% / 2); /* Display 3 images at a time */
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .logo-img {
+        width: 12px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .para {
+        font-size: 14px;
+        width: auto; /* Reset width to auto for smaller screens */
+    }
+    .frame{
+        flex-wrap: wrap;
+    }
+    .vase,.dining{
+        margin-right: 30px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 350px ;
+        border: none;
+        margin-left: 100px;
+        margin-right: 30px;
+        margin-bottom: 100px;
+    }.item-1{
+        border: #255849 solid 1px;
+        padding: 10px;
+        height: 400px;
+        width: 400px;
+    }
+    .item-1-h2{
+        font-size: 30px;
+    }.input-container {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        font-family: poppins;
+        font-size: 14px;
+        color: white;
+        width: 400px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+    .arrow-image {
+        display: none;
+    }
+    
+    .col-1 {
+        font-size: 16px; /* Further reduce font size for very small screens */
+    }
+
+    .newsletter {
+        font-size: 20px; /* Further increase font size for very small screens */
+    }
+
+    input[type="email"] {
+        font-size: 12px; /* Reduce font size for input fields on very small screens */
+    }    .vase,.dining{
+        margin-right: 30px;
+    }
+}@media screen and (max-width: 550px) {
+    .carousel img {
+        width: calc(100% / 2); /* Display 3 images at a time */
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .logo-img {
+        width: 12px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+    .btn{
+        font-size: 16px;
+    }
+    .para {
+        font-size: 14px;
+        width: auto; /* Reset width to auto for smaller screens */
+    }
+    .frame{
+        flex-wrap: wrap;
+    }
+    .vase,.dining{
+        margin-right: 30px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 250px ;
+        border: none;
+        margin-left: 100px;
+        margin-right: 30px;
+        margin-bottom: 100px;
+    }.item-1{
+        border: #255849 solid 1px;
+        padding: 10px;
+        height: 400px;
+        width: 300px;
+    }
+    .item{
+        width: 200px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+    .vase , .dining{
+        width: 250px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .item-1-h2{
+        font-size: 30px;
+    }.input-container {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        font-family: poppins;
+        font-size: 14px;
+        color: white;
+        width: 300px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+    .privacy{
+        font-size: 12px;
+    }
+    .arrow-image {
+        display: none;
+    }
+    
+    .col-1 {
+        font-size: 16px; /* Further reduce font size for very small screens */
+    }
+
+    .newsletter {
+        font-size: 20px; /* Further increase font size for very small screens */
+    }
+
+    input[type="email"] {
+        font-size: 12px; /* Reduce font size for input fields on very small screens */
+    }    .vase,.dining{
+        margin-right: 30px;
+    }
+}@media screen and (max-width: 450px) {
+    .carousel img {
+        width: calc(100% / 1); /* Display 3 images at a time */
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+
+    .logo-img {
+        width: 10px;
+        margin-top: 5px;
+    }
+
+    nav ul li {
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .para {
+        font-size: 14px;
+        width: auto; /* Reset width to auto for smaller screens */
+    }
+    .frame{
+        flex-wrap: wrap;
+    }
+    .vase,.dining{
+        margin-right: 30px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 250px ;
+        border: none;
+        margin-left:50px;
+        margin-right: 30px;
+        margin-bottom: 100px;
+    }.item-1{
+        border: #255849 solid 1px;
+        padding: 10px;
+        height: 400px;
+        width: 300px;
+    }
+    .item{
+        width: 200px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+    .vase , .dining{
+        width: 250px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .item-1-h2{
+        font-size: 30px;
+    }.input-container {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        font-family: poppins;
+        font-size: 14px;
+        color: white;
+        width: 300px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    .newsletter{
+        font-family: 16px;
+    }
+    .privacy{
+        font-size: 12px;
+    }
+    .arrow-image {
+        display: none;
+    }
+    
+    .col-1 {
+        font-size: 16px; /* Further reduce font size for very small screens */
+    }
+
+    .newsletter {
+        font-size: 20px; /* Further increase font size for very small screens */
+    }
+
+    input[type="email"] {
+        font-size: 12px; /* Reduce font size for input fields on very small screens */
+    }    .vase,.dining{
+        margin-right: 30px;
+    }
+}
