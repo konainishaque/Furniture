@@ -23,7 +23,7 @@ function autoSlide() {
 }
 
 // Set an interval to call the autoSlide function at a regular interval
-const interval = setInterval(autoSlide, 15000); // Change 3000 to the desired interval in milliseconds (3 seconds in this example)
+const interval = setInterval(autoSlide, 5000); // Change 3000 to the desired interval in milliseconds (3 seconds in this example)
 
 // Function to stop the automatic carousel when user interacts with it
 function stopAutoSlide() {
